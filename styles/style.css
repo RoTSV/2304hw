@@ -5,8 +5,8 @@
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-  -ms-grid-columns: 100px 100px 100px 100px 100px 100px;
-      grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-areas: "a b b b b c" "d e e e e f" "g h h i i j" "k k k l l l" "m m m n n n";
@@ -120,6 +120,9 @@
     -ms-grid-rows: 1fr 1fr 1fr 100px 100px;
         grid-template-rows: 1fr 1fr 1fr 100px 100px;
         grid-template-areas: "a a b b c c" "d d e e f f" "g h i j k l" "m m m m m m " "n n n n n n ";
+  }
+  .wrap:nth-child(3n) {
+    background-color: aquamarine;
   }
   .wrap div {
     border: 1px solid black;
