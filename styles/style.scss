@@ -66,12 +66,12 @@
         display: grid;  
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
-        grid-template-areas: "a b b b b b"
-                            "e e e e e e"
-                            "g h h i i j"
-                            "k k k l l l"
-                            "a c d f g j" ;
+        grid-template-rows: 1fr 1fr 1fr 100px 100px ;
+        grid-template-areas: "a a b b c c"
+                            "d d e e f f"
+                            "g h i j k l"
+                            "m m m m m m "
+                            "n n n n n n ";
         div{
             border: 1px solid black;
             text-align: center;
